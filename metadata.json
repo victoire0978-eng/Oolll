@@ -1,0 +1,10 @@
+{
+  "name": "Remix DAKIS IA",
+  "description": "DAKIS AI - Assistant intelligent et système d'étude hors-ligne anti-hallucination avec validation de kits, enrichissement en ligne, extraction de schémas PDF et moteur d'évaluation 3-badges.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

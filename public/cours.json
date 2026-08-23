@@ -1,0 +1,464 @@
+[
+  {
+    "id": "official_polytech_rdm",
+    "title": "Résistance des Matériaux & Calcul des Structures (RDM)",
+    "faculty": "Polytechnique",
+    "totalPages": 28,
+    "fileSize": 680000,
+    "createdAt": 1740000000000,
+    "uploaderId": "boss_ismael",
+    "uploaderName": "Boss ISMAEL (Créateur) ⚡",
+    "isOfficial": true,
+    "downloadUrl": "https://ia800200.us.archive.org/21/items/coursderesistanc00chriuoft/coursderesistanc00chriuoft.pdf",
+    "description": "Formulaire complet RDM : moments fléchissants (q*L^2/8), contraintes de traction/compression, cercle de Mohr, loi de Hooke et déformation des poutres.",
+    "sampleText": "Chapitre 1: Théorie des poutres et hypothèse de Navier-Bernoulli. Les sections droites restent planes et perpendiculaires à la ligne moyenne déformée. Moment fléchissant maximal pour une poutre sur deux appuis simples chargée uniformément: M_max = (q * L^2) / 8. Contrainte normale: sigma = (M_f * y) / I_z. Module d'élasticité de Young E = 210 GPa pour l'acier.",
+    "fullContent": "--- Page 1: Fondements et Hypothèses de la RDM ---\nLa Résistance des Matériaux (RDM) étudie le dimensionnement, la rigidité et la stabilité des éléments structuraux soumis à des sollicitations extérieures. Hypothèse fondamentale de Navier-Bernoulli : les sections droites planes avant déformation restent planes et perpendiculaires à la ligne moyenne déformée après application de la charge. Loi de Hooke en traction-compression uniaxiale : sigma = E * epsilon, où sigma désigne la contrainte normale (Pa ou MPa), E le module d'Young (acier : E = 210 GPa, béton : E = 30 GPa), et epsilon la déformation relative sans dimension (epsilon = Delta_L / L_0). Coefficient de Poisson nu = - epsilon_transversal / epsilon_axial (nu = 0.3 pour l'acier, nu = 0.2 pour le béton).\n\n--- Page 2: Traction et Compression Simple ---\nSous un effort normal N (N > 0 en traction, N < 0 en compression), la contrainte normale uniforme vaut : sigma = N / S. Condition de résistance élastique : sigma <= sigma_adm = R_e / s, où R_e est la limite d'élasticité du matériau et s le coefficient de sécurité (s >= 1.5 en ingénierie de structure). Allongement total d'une barre de longueur L et de section constante S : Delta_L = (N * L) / (E * S). Rigidité axiale k = (E * S) / L.\n\n--- Page 3: Flexion Simple & Moments Fléchissants ---\nDans une poutre soumise à la flexion plane pure ou simple, les sollicitations internes se réduisent à l'effort tranchant V(x) et au moment fléchissant M_f(x). Relation différentielle fondamentale de l'équilibre des poutres : dV/dx = - q(x) et dM_f/dx = V(x), d'où d^2(M_f)/dx^2 = - q(x). Pour une poutre de portée L reposant sur deux appuis simples chargée par une charge uniformément répartie q (N/m) : Réactions aux appuis R_A = R_B = (q * L) / 2. Effort tranchant V(x) = (q * L) / 2 - q * x. Moment fléchissant maximal à mi-travée (x = L/2) : M_max = (q * L^2) / 8. Pour une poutre sur deux appuis chargée par une force ponctuelle F centrée (x = L/2) : M_max = (F * L) / 4.\n\n--- Page 4: Calcul des Contraintes et Déformations en Flexion ---\nLa contrainte normale en tout point de cote y par rapport à l'axe neutre s'écrit : sigma(y) = (M_f * y) / I_z, où I_z est le moment quadratique d'inertie de la section droite. Pour une section rectangulaire de largeur b et de hauteur h : I_z = (b * h^3) / 12. Module de flexion W_z = I_z / (h/2) = (b * h^2) / 6. Contrainte maximale de flexion : sigma_max = M_f / W_z = (6 * M_f) / (b * h^2). Équation différentielle de la déformée (flèche y(x)) : E * I_z * y''(x) = - M_f(x). Flèche maximale à mi-travée pour une charge uniforme : f_max = (5 * q * L^4) / (384 * E * I_z). Flèche maximale pour force ponctuelle centrée : f_max = (F * L^3) / (48 * E * I_z).\n\n--- Page 5: Torsion, Cisaillement et Flambement d'Euler ---\nContrainte de cisaillement en torsion pour un arbre cylindrique de rayon R et de moment de torsion M_t : tau_max = (M_t * R) / I_p avec moment polaire I_p = (pi * D^4) / 32. Angle de torsion unitaire theta = M_t / (G * I_p), où G est le module de Coulomb (G = E / (2 * (1 + nu))). Formule de Jourawski pour le cisaillement en flexion : tau = (V * S_y) / (b * I_z). Flambement d'Euler pour une colonne comprimée de longueur L : Charge critique d'Euler P_c = (pi^2 * E * I) / L_k^2, où L_k est la longueur de flambement (poteau bi-articulé : L_k = L; bi-encastré : L_k = 0.5*L; encastré-libre : L_k = 2*L; encastré-articulé : L_k = 0.7*L). Élancement lambda = L_k / i_min avec rayon de giration i_min = sqrt(I / S).",
+    "summary": [
+      "1. Hypothèse de Navier-Bernoulli : les sections droites planes restent planes et orthogonales à la ligne moyenne.",
+      "2. Loi de Hooke : sigma = E * epsilon (E = 210 GPa pour l'acier, 30 GPa pour le béton).",
+      "3. Allongement en traction/compression : Delta_L = (N * L) / (E * S).",
+      "4. Relation différentielle des poutres : dM_f/dx = V(x) et dV/dx = - q(x).",
+      "5. Moment fléchissant maximal pour poutre bi-appuyée sous charge uniforme : M_max = (q * L^2) / 8.",
+      "6. Moment fléchissant maximal sous charge ponctuelle centrée F : M_max = (F * L) / 4.",
+      "7. Contrainte normale de flexion : sigma = (M_f * y) / I_z = M_f / W_z avec W_z = (b * h^2) / 6 pour un rectangle.",
+      "8. Flèche maximale sous charge uniforme : f_max = (5 * q * L^4) / (384 * E * I_z).",
+      "9. Formule de Jourawski pour le cisaillement : tau = (V * S_y) / (b * I_z).",
+      "10. Charge critique de flambement d'Euler : P_c = (pi^2 * E * I) / L_k^2."
+    ],
+    "formulas": [
+      "sigma = E * epsilon (Loi de Hooke)",
+      "Delta_L = (N * L) / (E * S) (Allongement traction)",
+      "M_max = (q * L^2) / 8 (Moment flexion charge uniforme)",
+      "M_max = (F * L) / 4 (Moment flexion force centrée)",
+      "sigma = (M_f * y) / I_z (Contrainte normale flexion)",
+      "I_z = (b * h^3) / 12 (Inertie section rectangulaire)",
+      "W_z = (b * h^2) / 6 (Module de flexion rectangulaire)",
+      "f_max = (5 * q * L^4) / (384 * E * I_z) (Flèche maximale poutre)",
+      "f_max = (F * L^3) / (48 * E * I_z) (Flèche force ponctuelle)",
+      "tau = (V * S_y) / (b * I_z) (Formule de Jourawski)",
+      "P_c = (pi^2 * E * I) / L_k^2 (Charge critique d'Euler)",
+      "lambda = L_k / sqrt(I / S) (Élancement géométrique)",
+      "tau_max = (M_t * R) / I_p (Torsion cylindrique)",
+      "G = E / (2 * (1 + nu)) (Module de cisaillement)"
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "Quelle est la valeur du moment fléchissant maximal pour une poutre sur 2 appuis sous charge uniforme q de portée L ?",
+        "options": ["M_max = (q * L^2) / 8", "M_max = (q * L^2) / 2", "M_max = (q * L) / 4", "M_max = (q * L^3) / 12"],
+        "correctIndex": 0,
+        "explanation": "Pour une poutre simplement appuyée sous charge continue q, l'intégration de la charge donne un moment parabolique maximal à mi-travée égal à (q * L^2) / 8."
+      },
+      {
+        "id": 2,
+        "question": "Quel est le moment d'inertie I_z d'une section rectangulaire de largeur b et de hauteur h ?",
+        "options": ["I_z = (b * h^3) / 12", "I_z = (b * h^2) / 6", "I_z = (b^2 * h^2) / 4", "I_z = (b * h^3) / 3"],
+        "correctIndex": 0,
+        "explanation": "L'inertie par rapport à l'axe passant par le centre de gravité est I_z = (b * h^3) / 12."
+      },
+      {
+        "id": 3,
+        "question": "Que postule l'hypothèse de Navier-Bernoulli ?",
+        "options": [
+          "Les sections droites planes restent planes et normales à la ligne moyenne déformée",
+          "Le matériau se plastifie instantanément sous l'effort",
+          "Le cisaillement est nul en tout point de la poutre",
+          "Le béton résiste aussi bien en traction qu'en compression"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'hypothèse cinématique de Navier-Bernoulli stipule que les sections droites restent indéformables et orthogonales à la fibre neutre."
+      },
+      {
+        "id": 4,
+        "question": "Quelle est la formule de la charge critique de flambement d'Euler ?",
+        "options": ["P_c = (pi^2 * E * I) / L_k^2", "P_c = (E * S) / L", "P_c = (2 * pi * E) / L^2", "P_c = (M_f * I) / L_k"],
+        "correctIndex": 0,
+        "explanation": "La charge limite de stabilité élastique au flambement d'une colonne est P_c = (pi^2 * E * I) / L_k^2."
+      },
+      {
+        "id": 5,
+        "question": "Quelle est la flèche maximale d'une poutre bi-appuyée de portée L sous charge répartie q ?",
+        "options": ["f_max = (5 * q * L^4) / (384 * E * I_z)", "f_max = (q * L^3) / (48 * E * I_z)", "f_max = (q * L^4) / (8 * E * I_z)", "f_max = (3 * q * L^2) / (128 * E * I_z)"],
+        "correctIndex": 0,
+        "explanation": "En intégrant quatre fois l'équation différentielle de la déformée E*I*y'' = -M_f, on obtient f_max = (5 * q * L^4) / (384 * E * I_z)."
+      }
+    ]
+  },
+  {
+    "id": "official_polytech_beton",
+    "title": "Traité de Béton Armé & Eurocode 2",
+    "faculty": "Polytechnique",
+    "totalPages": 34,
+    "fileSize": 920000,
+    "createdAt": 1740000000000,
+    "uploaderId": "boss_ismael",
+    "uploaderName": "Boss ISMAEL (Créateur) ⚡",
+    "isOfficial": true,
+    "downloadUrl": "https://ia600204.us.archive.org/3/items/traithoriqu01cons/traithoriqu01cons.pdf",
+    "description": "Calculs des armatures, flexion simple à l'ELU, état limite de service (ELS), dimensionnement des semelles, poteaux et vérification au cisaillement.",
+    "sampleText": "Calcul aux états limites ultimes (ELU): Moment réduit mu_u = M_u / (b * d^2 * f_cd). Si mu_u < mu_lu (0.372), la section est simplement armée sans aciers comprimés. Section d'acier tendu: A_s = M_u / (z * f_yd) avec z = d * (1 - 0.4 * alpha_u). Résistance caractéristique du béton f_ck = 25 MPa.",
+    "fullContent": "--- Page 1: Principes du Béton Armé & États Limites ---\nLe béton armé associe le béton (très résistant à la compression mais fragile en traction, f_ctm ≈ 0.3 * f_ck^(2/3)) et l'acier d'armature (haute résistance en traction, f_yk = 500 MPa, E_s = 200 GPa). Deux états limites sont étudiés selon l'Eurocode 2 (EC2) : 1. L'État Limite Ultime (ELU) qui garantit la sécurité contre la rupture et l'effondrement (combinaison d'actions fondamentales : 1.35 * G + 1.5 * Q); 2. L'État Limite de Service (ELS) qui garantit la durabilité, la limitation des flèches et de la fissuration (combinaison caractéristique : G + Q).\n\n--- Page 2: Résistances de Calcul des Matériaux ---\nRésistance de calcul du béton en compression : f_cd = alpha_cc * f_ck / gamma_c, avec alpha_cc = 1.0 (ou 0.85 selon annexe nationale) et coefficient partiel gamma_c = 1.5 en situation durable. Pour un béton C25/30 : f_ck = 25 MPa, f_cd = 25 / 1.5 = 16.67 MPa. Résistance de calcul de l'acier en traction : f_yd = f_yk / gamma_s avec gamma_s = 1.15. Pour un acier B500B : f_yd = 500 / 1.15 = 434.78 MPa. Module d'élasticité de l'acier E_s = 200 000 MPa.\n\n--- Page 3: Flexion Simple à l'ELU (Section Rectangulaire) ---\nSoit une section rectangulaire de largeur b, de hauteur totale h et de hauteur utile d (d ≈ 0.9 * h). Moment fléchissant ultime agissant M_u. Moment ultime réduit sans dimension : mu_u = M_u / (b * d^2 * f_cd). Pivot critique de référence pour l'acier FeE500 : mu_lu = 0.372 (ou 0.392 selon diagramme bilinéaire). Si mu_u <= mu_lu : la section est simplement armée (pas besoin d'armatures comprimées A_sc = 0). Position relative de l'axe neutre : alpha_u = 1.25 * (1 - sqrt(1 - 2 * mu_u)). Bras de levier des forces internes : z = d * (1 - 0.4 * alpha_u). Section d'acier tendu requise : A_s = M_u / (z * f_yd).\n\n--- Page 4: Effort Tranchant & Armatures Transversales ---\nEffort tranchant de calcul V_Ed. Résistance de calcul au cisaillement sans armatures d'effort tranchant : V_Rd,c = [C_Rd,c * k * (100 * rho_l * f_ck)^(1/3) + k_1 * sigma_cp] * b_w * d >= v_min * b_w * d avec k = 1 + sqrt(200/d) <= 2.0. Si V_Ed > V_Rd,c : des cadres et étriers sont obligatoires. Selon la méthode des bielles d'inclinaison theta (1 <= cot(theta) <= 2.5) : Section d'armatures transversales par unité de longueur : (A_sw / s) = V_Ed / (z * f_ywd * cot(theta)). Résistance maximale des bielles de béton comprimées : V_Rd,max = (alpha_cw * b_w * z * nu_1 * f_cd) / (cot(theta) + tan(theta)).\n\n--- Page 5: Flexion à l'ELS & Limitation de la Fissuration ---\nÀ l'ELS, le béton tendu est fissuré et négligé, le coefficient d'équivalence acier-béton est n = E_s / E_cm ≈ 15 pour tenir compte du fluage du béton. Position de l'axe neutre y_1 par l'équation des moments statiques : (b * y_1^2) / 2 - n * A_s * (d - y_1) = 0. Moment d'inertie fissuré : I_fiss = (b * y_1^3) / 3 + n * A_s * (d - y_1)^2. Contrainte dans le béton comprimé : sigma_bc = (M_ser * y_1) / I_fiss <= 0.6 * f_ck. Contrainte dans les aciers tendus : sigma_s = n * (M_ser * (d - y_1)) / I_fiss <= 0.8 * f_yk. Condition de non-fragilité minimale : A_s,min = 0.26 * (f_ctm / f_yk) * b_t * d >= 0.0013 * b_t * d.",
+    "summary": [
+      "1. Combinaison fondamentale ELU : 1.35*G + 1.5*Q (sécurité et résistance structurelle).",
+      "2. Combinaison caractéristique ELS : G + Q (durabilité, limitation des flèches et ouvertures de fissures).",
+      "3. Résistances de calcul : f_cd = f_ck / 1.5 (béton) et f_yd = f_yk / 1.15 (acier B500B : f_yd = 435 MPa).",
+      "4. Moment ultime réduit sans dimension : mu_u = M_u / (b * d^2 * f_cd).",
+      "5. Si mu_u <= 0.372 : section simplement armée (pas d'acier comprimé).",
+      "6. Position de l'axe neutre à l'ELU : alpha_u = 1.25 * (1 - sqrt(1 - 2 * mu_u)).",
+      "7. Bras de levier mécanique interne : z = d * (1 - 0.4 * alpha_u).",
+      "8. Section d'acier tendu requise : A_s = M_u / (z * f_yd).",
+      "9. Coefficient d'équivalence acier/béton à l'ELS : n = E_s / E_c = 15.",
+      "10. Section minimale d'acier (non-fragilité) : A_s,min = 0.26 * (f_ctm / f_yk) * b * d."
+    ],
+    "formulas": [
+      "mu_u = M_u / (b * d^2 * f_cd) (Moment réduit ultime)",
+      "alpha_u = 1.25 * (1 - sqrt(1 - 2 * mu_u)) (Position axe neutre ELU)",
+      "z = d * (1 - 0.4 * alpha_u) (Bras de levier interne)",
+      "A_s = M_u / (z * f_yd) (Section acier tendu ELU)",
+      "f_cd = f_ck / 1.5 (Résistance calcul béton)",
+      "f_yd = f_yk / 1.15 (Résistance calcul acier)",
+      "A_s,min = 0.26 * (f_ctm / f_yk) * b * d (Armatures minimales)",
+      "sigma_bc = (M_ser * y_1) / I_fiss (Contrainte béton ELS <= 0.6*f_ck)",
+      "sigma_s = 15 * (M_ser * (d - y_1)) / I_fiss (Contrainte acier ELS <= 0.8*f_yk)",
+      "(A_sw / s) = V_Ed / (z * f_ywd * cot(theta)) (Cadres effort tranchant)"
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "Quelle est la résistance de calcul f_cd d'un béton C25/30 à l'ELU (gamma_c = 1.5) ?",
+        "options": ["16.67 MPa", "25.0 MPa", "21.74 MPa", "12.5 MPa"],
+        "correctIndex": 0,
+        "explanation": "f_cd = f_ck / gamma_c = 25 / 1.5 = 16.67 MPa."
+      },
+      {
+        "id": 2,
+        "question": "Quelle condition indique qu'une section rectangulaire en flexion simple n'a pas besoin d'aciers comprimés à l'ELU ?",
+        "options": ["mu_u <= mu_lu (0.372)", "mu_u >= 0.5", "alpha_u > 0.6", "d < 0.5 * h"],
+        "correctIndex": 0,
+        "explanation": "Lorsque le moment réduit mu_u reste inférieur au moment limite mu_lu (0.372 pour l'acier FeE500), le béton comprimé suffit et la section est simplement armée."
+      },
+      {
+        "id": 3,
+        "question": "Quel est le coefficient d'équivalence acier-béton classiquement retenu à l'ELS pour tenir compte du fluage ?",
+        "options": ["n = 15", "n = 1", "n = 5", "n = 30"],
+        "correctIndex": 0,
+        "explanation": "Le coefficient d'équivalence n = E_s / E_cm est forfaitairement fixé à 15 dans les règles usuelles de calcul à l'ELS."
+      },
+      {
+        "id": 4,
+        "question": "Comment calcule-t-on la section d'acier tendu A_s à l'ELU ?",
+        "options": ["A_s = M_u / (z * f_yd)", "A_s = M_u / (d * f_cd)", "A_s = (b * h) / 100", "A_s = V_Ed * f_yd"],
+        "correctIndex": 0,
+        "explanation": "La formule d'équilibre de la flexion simple donne A_s = M_u / (z * f_yd) où z est le bras de levier des forces internes."
+      }
+    ]
+  },
+  {
+    "id": "official_droit_civil",
+    "title": "Droit Civil des Obligations & Théorie Générale du Contrat",
+    "faculty": "Droit",
+    "totalPages": 22,
+    "fileSize": 540000,
+    "createdAt": 1740000000000,
+    "uploaderId": "daniella_dakis",
+    "uploaderName": "Reine Daniella (DAKIS) 👑",
+    "isOfficial": true,
+    "downloadUrl": "https://ia800202.us.archive.org/16/items/traitdudroitciv01plangoog/traitdudroitciv01plangoog.pdf",
+    "description": "Principes du consensualisme, force obligatoire du contrat, bonne foi, vices du consentement (erreur, dol, violence) et responsabilité civile contractuelle et extracontractuelle.",
+    "sampleText": "Article 1101: Le contrat est un accord de volontés entre deux ou plusieurs personnes destiné à créer, modifier, transmettre ou éteindre des obligations. Les conditions de validité du contrat: 1. Le consentement des parties libre et éclairé; 2. La capacité de contracter; 3. Un contenu licite et certain. La nullité relative sanctionne la protection d'un intérêt privé.",
+    "fullContent": "--- Page 1: Notions Fondamentales et Définition de l'Obligation ---\nL'obligation est un lien de droit (vinculum juris) par lequel une personne, le débiteur, est tenue envers une autre, le créancier, d'accomplir une prestation (obligation de donner, de faire ou de ne pas faire). Les obligations naissent d'actes juridiques (contrats, actes unilatéraux) ou de faits juridiques (délits, quasi-délits, quasi-contrats). Selon l'article 1101 du Code civil : « Le contrat est un accord de volontés entre deux ou plusieurs personnes destiné à créer, modifier, transmettre ou éteindre des obligations ».\n\n--- Page 2: Les Grands Principes Directeurs du Droit des Contrats ---\n1. L'autonomie de la volonté et la liberté contractuelle : chacun est libre de contracter ou de ne pas contracter, de choisir son cocontractant et de déterminer le contenu et la forme du contrat dans les limites fixées par la loi et l'ordre public.\n2. Le principe du consensualisme : le contrat se forme par le seul échange des consentements (solo consensu), sans qu'aucune forme solennelle ne soit en principe exigée.\n3. La force obligatoire du contrat (Pacta sunt servanda, art. 1103) : « Les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits ».\n4. Le devoir de bonne foi (art. 1104) : les contrats doivent être négociés, formés et exécutés de bonne foi (disposition d'ordre public).\n\n--- Page 3: Conditions de Validité et Vices du Consentement ---\nPour être valablement formé, le contrat exige trois conditions cumulatives (art. 1128) : 1° Le consentement des parties; 2° Leur capacité de contracter; 3° Un contenu licite et certain. Le consentement n'est valable que s'il est libre et éclairé. Les vices du consentement sont au nombre de trois :\n- L'Erreur (art. 1132) : fausse représentation de la réalité. Elle n'est une cause de nullité que lorsqu'elle porte sur les qualités essentielles de la prestation ou sur celles du cocontractant (dans les contrats intuitu personae).\n- Le Dol (art. 1137) : fait pour un contractant d'obtenir le consentement de l'autre par des manœuvres, des mensonges ou la dissimulation intentionnelle d'une information déterminante (réticence dolosive). Le dol est toujours excusable pour la victime.\n- La Violence (art. 1140) : contrainte physique ou morale illégitime inspirant la crainte d'exposer sa personne ou sa fortune à un mal considérable. L'abus de l'état de dépendance constitue également une violence économique (art. 1143).\nSanction des vices du consentement : la Nullité Relative (délai de prescription de 5 ans, invocable uniquement par la partie protégée).\n\n--- Page 4: Nullité, Inexécution et Responsabilité Contractuelle ---\nDistinction fondamentale des nullités : 1. La nullité relative protège un intérêt particulier (vices du consentement, incapacité d'exercice); 2. La nullité absolue sanctionne la violation d'une règle d'intérêt général (absence de consentement, contenu illicite, atteinte à l'ordre public). L'action en nullité entraîne l'anéantissement rétroactif du contrat avec remise des parties en l'état antérieur (restitutions réciproques).\nEn cas d'inexécution de l'obligation, le créancier dispose de plusieurs remèdes : l'exception d'inexécution (refus d'exécuter sa propre obligation), l'exécution forcée en nature, la réduction du prix, la résolution du contrat et l'action en responsabilité civile contractuelle.\n\n--- Page 5: La Responsabilité Civile Extracontractuelle (Délictuelle) ---\nPour engager la responsabilité extracontractuelle (art. 1240 du Code civil : « Tout fait quelconque de l'homme, qui cause à autrui un dommage, oblige celui par la faute duquel il est arrivé, à le réparer »), trois conditions cumulatives doivent être réunies :\n1. Une Faute (élément matériel et illicéité);\n2. Un Préjudice (ou Dommage) certain, direct, personnel et légitime (matériel, corporel ou moral);\n3. Un Lien de Causalité direct et certain entre la faute et le dommage. Causes d'exonération : la force majeure (événement imprévisible, irrésistible et extérieur), la faute de la victime et le fait d'un tiers.",
+    "summary": [
+      "1. Définition du contrat (art. 1101) : accord de volontés destiné à créer, modifier, transmettre ou éteindre des obligations.",
+      "2. Force obligatoire (art. 1103, Pacta sunt servanda) : les contrats légalement formés tiennent lieu de loi aux parties.",
+      "3. Devoir de bonne foi (art. 1104) : exigé impérativement à la négociation, formation et exécution.",
+      "4. Trois conditions de validité (art. 1128) : consentement sain, capacité juridique, contenu licite et certain.",
+      "5. Vices du consentement (art. 1130) : l'erreur essentielle, le dol (manœuvres ou réticence dolosive) et la violence.",
+      "6. Nullité relative : protège un intérêt privé (prescrite par 5 ans, réservée à la victime).",
+      "7. Nullité absolue : protège l'intérêt général et l'ordre public (invocable par tout intéressé).",
+      "8. Effet de la nullité : anéantissement rétroactif du contrat et restitution des prestations.",
+      "9. Trépied de la responsabilité civile (art. 1240) : une Faute + un Dommage certain + un Lien de causalité direct.",
+      "10. Causes exonératoires de responsabilité : Force majeure (imprévisible, irrésistible, extérieure), fait du tiers ou faute de la victime."
+    ],
+    "formulas": [
+      "Art. 1101 C.civ : Contrat = Accord de volontés créateur d'obligations",
+      "Art. 1103 C.civ : Force obligatoire des conventions légalement formées",
+      "Art. 1104 C.civ : Exécution de bonne foi obligatoire",
+      "Art. 1128 C.civ : Validité = Consentement + Capacité + Contenu licite",
+      "Art. 1130 C.civ : Vices du consentement = Erreur + Dol + Violence",
+      "Art. 1240 C.civ : Responsabilité civile = Faute + Dommage + Lien de causalité",
+      "Force Majeure = Imprévisibilité + Irrésistibilité + Extériorité"
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "Quels sont les trois vices du consentement sanctionnés par la nullité relative en droit des contrats ?",
+        "options": ["L'erreur, le dol et la violence", "La lésion, l'absence de cause et l'incapacité", "Le dol, la mauvaise foi et la résiliation", "La faute, le dommage et le lien causal"],
+        "correctIndex": 0,
+        "explanation": "Selon l'article 1130 du Code civil, l'erreur, le dol et la violence vicient le consentement lorsqu'ils sont de telle nature que, sans eux, l'une des parties n'aurait pas contracté ou aurait contracté à des conditions substantiellement différentes."
+      },
+      {
+        "id": 2,
+        "question": "Quelle est la sanction principale d'un vice du consentement ?",
+        "options": ["La nullité relative", "La nullité absolue", "La caducité automatique", "Une simple amende pénale"],
+        "correctIndex": 0,
+        "explanation": "La nullité est dite relative lorsque la règle violée a pour seul objet la sauvegarde d'un intérêt privé (art. 1179 C. civ.)."
+      },
+      {
+        "id": 3,
+        "question": "Quels sont les trois éléments cumulatifs indispensables pour engager la responsabilité civile extracontractuelle (art. 1240) ?",
+        "options": ["Une faute, un dommage certain et un lien de causalité direct", "Un contrat écrit, un témoin et un préjudice", "Une infraction pénale, un juge et un avocat", "Un dol, une violence et une mise en demeure"],
+        "correctIndex": 0,
+        "explanation": "La trilogie classique de la responsabilité délictuelle repose sur : 1° Une faute; 2° Un dommage (préjudice); 3° Un lien de causalité direct."
+      },
+      {
+        "id": 4,
+        "question": "Que signifie l'adage latin « Pacta sunt servanda » ?",
+        "options": ["Les conventions légalement formées doivent être respectées comme la loi", "Tout préjudice doit être intégralement réparé", "Nul ne peut se faire justice à soi-même", "Le doute profite toujours à l'accusé"],
+        "correctIndex": 0,
+        "explanation": "Pacta sunt servanda exprime le principe cardinal de la force obligatoire du contrat (art. 1103 C. civ.)."
+      }
+    ]
+  },
+  {
+    "id": "official_sciences_algebre",
+    "title": "Algèbre Linéaire & Calcul Matriciel Avancé",
+    "faculty": "Sciences",
+    "totalPages": 26,
+    "fileSize": 610000,
+    "createdAt": 1740000000000,
+    "uploaderId": "boss_ismael",
+    "uploaderName": "Boss ISMAEL (Créateur) ⚡",
+    "isOfficial": true,
+    "downloadUrl": "https://ia800305.us.archive.org/29/items/lec-algebre-superieure-serret/lec-algebre-superieure-serret.pdf",
+    "description": "Espaces vectoriels, diagonalisation des matrices, valeurs propres, polynôme caractéristique, produit scalaire et résolution des systèmes linéaires par Gauss-Jordan.",
+    "sampleText": "Définition: Une matrice carrée A est diagonalisable s'il existe une base de vecteurs propres. Équation caractéristique: det(A - lambda * I) = 0. Le déterminant d'une matrice 2x2 [[a, b], [c, d]] est calculé par det = a*d - b*c. Théorème du rang: dim(Ker(f)) + dim(Im(f)) = dim(E).",
+    "fullContent": "--- Page 1: Espaces Vectoriels et Applications Linéaires ---\nUn espace vectoriel E sur un corps K (R ou C) est un ensemble muni d'une loi interne (+) et d'une loi externe (.) vérifiant les 8 axiomes fondamentaux. Une famille de vecteurs (v_1, ..., v_n) est dite libre (ou linéairement indépendante) si la relation sum(alpha_i * v_i) = 0 implique que tous les scalaires alpha_i sont nuls. Si la famille engendre l'espace, elle forme une base de E. La dimension de E, notée dim(E), est le cardinal de toute base.\nPour une application linéaire f : E -> F : le noyau est Ker(f) = {x in E | f(x) = 0}, l'image est Im(f) = {f(x) | x in E}. Théorème du rang fondamental : dim(Ker(f)) + dim(Im(f)) = dim(E). f est injective ssi Ker(f) = {0}, f est surjective ssi rg(f) = dim(Im(f)) = dim(F).\n\n--- Page 2: Matrices et Déterminants ---\nSoit une matrice carrée A d'ordre n. Le déterminant d'une matrice 2x2 [[a, b], [c, d]] vaut : det(A) = a*d - b*c. Pour une matrice 3x3 par la règle de Sarrus ou le développement selon une ligne/colonne : det(A) = sum_{j=1}^n (-1)^{i+j} * a_{ij} * det(M_{ij}). Propriétés clés : det(A * B) = det(A) * det(B); det(A^T) = det(A); det(k * A) = k^n * det(A); det(A^(-1)) = 1 / det(A). Une matrice A est inversible si et seulement si det(A) != 0. Formule de la comatrice pour l'inverse : A^(-1) = (1 / det(A)) * (Com(A))^T.\n\n--- Page 3: Diagonalisation et Réduction des Endomorphismes ---\nSoit A une matrice carrée d'ordre n. Un scalaire lambda est valeur propre de A s'il existe un vecteur non nul X tel que A * X = lambda * X, soit (A - lambda * I) * X = 0. Le polynôme caractéristique de A est défini par : P_A(lambda) = det(A - lambda * I). Les valeurs propres de A sont les racines du polynôme caractéristique. L'espace propre associé à la valeur propre lambda est E_lambda = Ker(A - lambda * I).\nThéorème de diagonalisation : Une matrice A d'ordre n est diagonalisable ssi la somme des dimensions de ses sous-espaces propres est égale à n (ou ssi son polynôme caractéristique est scindé et la multiplicité géométrique de chaque valeur propre est égale à sa multiplicité algébrique). Dans ce cas, il existe une matrice de passage P inversible et une matrice diagonale D telles que : A = P * D * P^(-1), et pour tout entier k : A^k = P * D^k * P^(-1).\n\n--- Page 4: Systèmes Linéaires & Élimination de Gauss-Jordan ---\nUn système de m équations à n inconnues s'écrit sous forme matricielle : A * X = B. Méthode de Gauss : application d'opérations élémentaires sur les lignes (L_i <-> L_j, L_i <- k * L_i avec k != 0, L_i <- L_i + k * L_j) pour transformer la matrice augmentée [A | B] en matrice échelonnée réduite. Théorème de Rouché-Fontené : le système admet au moins une solution ssi rg(A) = rg([A | B]). Si rg(A) = n : solution unique (système de Cramer). Si rg(A) < n : infinité de solutions avec (n - rg(A)) degrés de liberté.\n\n--- Page 5: Espaces Préhilbertiens et Orthogonalité ---\nUn produit scalaire sur E est une forme bilinéaire symétrique définie positive notée <x, y>. Norme euclidienne associée : ||x|| = sqrt(<x, x>). Inégalité de Cauchy-Schwarz : |<x, y>| <= ||x|| * ||y||. Deux vecteurs x et y sont orthogonaux si <x, y> = 0. Procédé de Gram-Schmidt : transforme une base quelconque (u_1, ..., u_n) en une base orthonormée (e_1, ..., e_n). Projection orthogonale de x sur un sous-espace F de base orthonormée : p_F(x) = sum_{i=1}^k <x, e_i> * e_i.",
+    "summary": [
+      "1. Théorème du rang : dim(Ker(f)) + dim(Im(f)) = dim(E) pour toute application linéaire f : E -> F.",
+      "2. Déterminant 2x2 : det([[a, b], [c, d]]) = a*d - b*c.",
+      "3. Inversibilité : A est inversible ssi det(A) != 0, avec A^(-1) = (1 / det(A)) * (Com(A))^T.",
+      "4. Propriétés du déterminant : det(A*B) = det(A)*det(B), det(k*A) = k^n * det(A).",
+      "5. Valeurs propres : racines du polynôme caractéristique P(lambda) = det(A - lambda * I) = 0.",
+      "6. Espace propre associé à lambda : E_lambda = Ker(A - lambda * I).",
+      "7. Diagonalisation : A = P * D * P^(-1) et calcul des puissances matricielles A^k = P * D^k * P^(-1).",
+      "8. Élimination de Gauss-Jordan : pivotement élémentaire sur les lignes pour résoudre A * X = B.",
+      "9. Inégalité de Cauchy-Schwarz : |<x, y>| <= ||x|| * ||y||.",
+      "10. Procédé d'orthogonalisation de Gram-Schmidt : construction d'une base orthonormée."
+    ],
+    "formulas": [
+      "dim(Ker(f)) + dim(Im(f)) = dim(E) (Théorème du rang)",
+      "det(A) = a*d - b*c (Déterminant 2x2)",
+      "det(A * B) = det(A) * det(B) (Multiplicativité déterminant)",
+      "A^(-1) = (1 / det(A)) * (Com(A))^T (Inverse matriciel)",
+      "det(A - lambda * I) = 0 (Équation caractéristique)",
+      "A = P * D * P^(-1) (Diagonalisation matricielle)",
+      "A^k = P * D^k * P^(-1) (Puissance k-ième de matrice)",
+      "||x|| = sqrt(<x, x>) (Norme euclidienne)",
+      "|<x, y>| <= ||x|| * ||y|| (Inégalité de Cauchy-Schwarz)"
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "Soit la matrice 2x2 A = [[3, 2], [1, 4]]. Quel est son déterminant det(A) ?",
+        "options": ["10", "14", "8", "12"],
+        "correctIndex": 0,
+        "explanation": "det(A) = 3*4 - 2*1 = 12 - 2 = 10."
+      },
+      {
+        "id": 2,
+        "question": "Que stipule le théorème du rang pour une application linéaire f : E -> F en dimension finie ?",
+        "options": ["dim(Ker(f)) + dim(Im(f)) = dim(E)", "dim(Ker(f)) = dim(Im(f))", "rg(f) = dim(F) - dim(E)", "dim(Ker(f)) * dim(Im(f)) = dim(E)"],
+        "correctIndex": 0,
+        "explanation": "La dimension de l'espace de départ est égale à la somme de la dimension du noyau et de la dimension de l'image (le rang)."
+      },
+      {
+        "id": 3,
+        "question": "Comment calcule-t-on les valeurs propres lambda d'une matrice carrée A ?",
+        "options": ["En résolvant det(A - lambda * I) = 0", "En calculant la trace de A", "En multipliant A par sa transposée", "En inversant la comatrice"],
+        "correctIndex": 0,
+        "explanation": "Les valeurs propres sont exactement les racines de l'équation caractéristique det(A - lambda * I) = 0."
+      }
+    ]
+  },
+  {
+    "id": "official_polytech_electrotech",
+    "title": "Électrotechnique, Lois des Circuits & Puissances AC/DC",
+    "faculty": "Polytechnique",
+    "totalPages": 24,
+    "fileSize": 580000,
+    "createdAt": 1740000000000,
+    "uploaderId": "boss_ismael",
+    "uploaderName": "Boss ISMAEL (Créateur) ⚡",
+    "isOfficial": true,
+    "description": "Loi d'Ohm, lois de Kirchhoff, théorèmes de Thévenin/Norton, régime sinusoïdal, puissances active/réactive/apparente et transformateurs triphasés.",
+    "sampleText": "Loi d'Ohm: U = R * I. Puissance électrique en continu: P = U * I = R * I^2. En régime alternatif sinusoïdal: Puissance active P = U * I * cos(phi) (W), Puissance réactive Q = U * I * sin(phi) (VAR), Puissance apparente S = U * I (VA). Relation pythagoricienne: S^2 = P^2 + Q^2.",
+    "fullContent": "--- Page 1: Lois Fondamentales en Courant Continu (DC) ---\nLoi d'Ohm : la différence de potentiel U (Volts) aux bornes d'un conducteur ohmique de résistance R (Ohms) traversé par un courant I (Ampères) s'écrit U = R * I. Puissance dissipée par effet Joule : P = U * I = R * I^2 = U^2 / R (Watts). Énergie électrique consommée : W = P * t (Joules ou kWh, 1 kWh = 3.6 * 10^6 J). Loi des nœuds (1ère loi de Kirchhoff) : la somme algébrique des courants entrant dans un nœud est égale à la somme des courants qui en sortent (sum(I_entrant) = sum(I_sortant)). Loi des mailles (2ème loi de Kirchhoff) : la somme algébrique des tensions le long d'une maille fermée orientée est nulle (sum(U_k) = 0).\n\n--- Page 2: Associations de Composants et Théorèmes de Réseau ---\nRésistances en série : R_eq = R_1 + R_2 + ... + R_n. Résistances en parallèle : 1 / R_eq = 1 / R_1 + 1 / R_2 (pour deux résistances : R_eq = (R_1 * R_2) / (R_1 + R_2)). Pont diviseur de tension : U_2 = U * (R_2 / (R_1 + R_2)). Pont diviseur de courant : I_1 = I * (R_2 / (R_1 + R_2)).\nCondensateurs : Charge Q = C * U (Coulombs), Énergie stockée E_c = (1/2) * C * U^2. Condensateurs en parallèle : C_eq = C_1 + C_2; en série : 1 / C_eq = 1 / C_1 + 1 / C_2. Bobine d'inductance L : Tension induite u(t) = L * (di/dt), Énergie magnétique E_L = (1/2) * L * i^2. Théorème de Thévenin : tout dipôle linéaire actif est équivalent à une source de tension idéale E_th en série avec une résistance interne R_th.\n\n--- Page 3: Régime Alternatif Sinusoïdal (AC) & Impédances Complexes ---\nTension sinusoïdale : u(t) = U_max * cos(omega * t + phi), avec pulsation omega = 2 * pi * f (rad/s, f = 50 Hz ou 60 Hz). Valeur efficace : U_eff = U_max / sqrt(2), I_eff = I_max / sqrt(2). Impédances complexes (notation complexe j^2 = -1) :\n- Résistance : Z_R = R;\n- Inductance : Z_L = j * omega * L (module X_L = L * omega en Ohms);\n- Condensateur : Z_C = 1 / (j * omega * C) = - j / (C * omega) (module X_C = 1 / (C * omega)).\nImpédance totale d'un circuit RLC série : Z = R + j * (L * omega - 1 / (C * omega)). Module d'impédance : |Z| = sqrt(R^2 + (L * omega - 1 / (C * omega))^2). Fréquence de résonance LC : f_0 = 1 / (2 * pi * sqrt(L * C)).\n\n--- Page 4: Triangle des Puissances & Facteur de Puissance ---\nEn régime sinusoïdal monophasé :\n1. Puissance active (travail utile dissipé) : P = U * I * cos(phi) (en Watts, W);\n2. Puissance réactive (magnétisation des bobines et condensateurs) : Q = U * I * sin(phi) (en Volt-Ampères Réactifs, VAR);\n3. Puissance apparente (dimensionnement des câbles et transformateurs) : S = U * I (en Volt-Ampères, VA).\nRelation du triangle des puissances (théorème de Boucherot) : S = sqrt(P^2 + Q^2), tan(phi) = Q / P. Facteur de puissance : k = cos(phi) = P / S. Relèvement du facteur de puissance : pour passer de cos(phi) à cos(phi') à l'aide d'une batterie de condensateurs en parallèle : Capacité requise C = (P * (tan(phi) - tan(phi'))) / (omega * U^2).\n\n--- Page 5: Systèmes Triphasés Équilibrés & Moteurs Asynchrones ---\nTensions simples (entre phase et neutre) V et tensions composées (entre deux phases) U : relation U = sqrt(3) * V (ex. 230V / 400V). Puissance active totale en triphasé équilibré : P_tot = sqrt(3) * U * I * cos(phi) = 3 * V * I * cos(phi). Puissance réactive totale : Q_tot = sqrt(3) * U * I * sin(phi). Puissance apparente totale : S_tot = sqrt(3) * U * I. Vitesse de synchronisme d'un moteur asynchrone : n_s = (60 * f) / p (tr/min), où p est le nombre de paires de pôles. Glissement : g = (n_s - n) / n_s. Rendement du moteur : eta = P_utile / P_absorbée.",
+    "summary": [
+      "1. Loi d'Ohm : U = R * I et puissance dissipée par effet Joule : P = R * I^2 = U^2 / R.",
+      "2. Lois de Kirchhoff : loi des nœuds (conservation de la charge) et loi des mailles (conservation de l'énergie).",
+      "3. Impédance d'une inductance : Z_L = j * omega * L ; condensateur : Z_C = 1 / (j * C * omega).",
+      "4. Module d'impédance RLC série : |Z| = sqrt(R^2 + (L*omega - 1/(C*omega))^2).",
+      "5. Fréquence de résonance propre : f_0 = 1 / (2 * pi * sqrt(L * C)).",
+      "6. Puissance active monophasée : P = U * I * cos(phi) (Watts).",
+      "7. Puissance réactive monophasée : Q = U * I * sin(phi) (VAR).",
+      "8. Puissance apparente : S = U * I = sqrt(P^2 + Q^2) (VA).",
+      "9. Capacité de compensation de l'énergie réactive : C = P * (tan(phi) - tan(phi')) / (omega * U^2).",
+      "10. Puissance triphasée équilibrée : P = sqrt(3) * U * I * cos(phi)."
+    ],
+    "formulas": [
+      "U = R * I (Loi d'Ohm)",
+      "P = U * I = R * I^2 (Puissance Joule continue)",
+      "R_eq = (R_1 * R_2) / (R_1 + R_2) (Deux résistances en parallèle)",
+      "P = U * I * cos(phi) (Puissance active AC)",
+      "Q = U * I * sin(phi) (Puissance réactive AC)",
+      "S = U * I = sqrt(P^2 + Q^2) (Puissance apparente AC)",
+      "Z = sqrt(R^2 + (L*omega - 1/(C*omega))^2) (Impédance RLC série)",
+      "f_0 = 1 / (2 * pi * sqrt(L * C)) (Fréquence de résonance)",
+      "C = (P * (tan(phi) - tan(phi'))) / (omega * U^2) (Batterie condensateurs)",
+      "P_tri = sqrt(3) * U * I * cos(phi) (Puissance triphasée)",
+      "n_s = (60 * f) / p (Vitesse synchronisme moteur)"
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "Quelle est la puissance active consommée par un récepteur monophasé sous U = 230V, I = 10A avec un facteur de puissance cos(phi) = 0.8 ?",
+        "options": ["1840 W", "2300 W", "1380 W", "2875 W"],
+        "correctIndex": 0,
+        "explanation": "P = U * I * cos(phi) = 230 * 10 * 0.8 = 1840 Watts (1.84 kW)."
+      },
+      {
+        "id": 2,
+        "question": "Quelle est la relation liant la puissance apparente S, la puissance active P et la puissance réactive Q ?",
+        "options": ["S^2 = P^2 + Q^2", "S = P + Q", "S = P * Q", "P^2 = S^2 + Q^2"],
+        "correctIndex": 0,
+        "explanation": "Dans le triangle des puissances pythagoricien, l'hypoténuse S vérifie S = sqrt(P^2 + Q^2)."
+      },
+      {
+        "id": 3,
+        "question": "Quelle est la tension composée U d'un réseau triphasé dont la tension simple phase-neutre est V = 230 V ?",
+        "options": ["400 V (230 * sqrt(3))", "230 V", "460 V", "325 V"],
+        "correctIndex": 0,
+        "explanation": "La tension entre phases vaut U = V * sqrt(3) = 230 * 1.732 ≈ 400 Volts."
+      }
+    ]
+  },
+  {
+    "id": "official_medecine_anatomie",
+    "title": "Précis d'Anatomie Humaine & Physiologie Cardiovasculaire",
+    "faculty": "Médecine",
+    "totalPages": 30,
+    "fileSize": 850000,
+    "createdAt": 1740000000000,
+    "uploaderId": "daniella_dakis",
+    "uploaderName": "Reine Daniella (DAKIS) 👑",
+    "isOfficial": true,
+    "downloadUrl": "https://ia800200.us.archive.org/15/items/traitedanatomieh01sapp/traitedanatomieh01sapp.pdf",
+    "description": "Cycle cardiaque, systole, diastole, hémodynamique, débit cardiaque, anatomie de l'appareil respiratoire et régulation de la pression artérielle.",
+    "sampleText": "Le coeur est une pompe musculaire constituée de quatre cavités: deux oreillettes et deux ventricules. Le débit cardiaque Q est égal au produit de la fréquence cardiaque FC par le volume d'éjection systolique VES (Q = FC * VES). La pression artérielle moyenne PAM = PAD + 1/3 * (PAS - PAD).",
+    "fullContent": "--- Page 1: Organisation Générale de l'Appareil Cardiovasculaire ---\nLe cœur est un organe musculaire creux situé dans le médiastin moyen, entre les deux poumons. Il est enveloppé par le péricarde et composé de trois couches tissulaires : l'endocarde (couche interne endothéliale), le myocarde (muscle contractile épais) et l'épicarde (feuillet viscéral du péricarde séreux). Le cœur est divisé en deux parties indépendantes : le cœur droit (qui reçoit le sang désoxygéné des veines caves et l'éjecte vers l'artère pulmonaire : petite circulation) et le cœur gauche (qui reçoit le sang oxygéné des quatre veines pulmonaires et l'éjecte dans l'aorte : grande circulation systémique). Les valves atrio-ventriculaires (tricuspide à droite, mitrale/bicuspide à gauche) et les valves semi-lunaires/sigmoïdes (aortique et pulmonaire) assurent un flux unidirectionnel du sang.\n\n--- Page 2: Révolution Cardiaque & Hémodynamique ---\nLa révolution cardiaque comprend une phase de contraction et d'éjection (Systole) et une phase de relaxation et de remplissage (Diastole). Volume Télédiastolique (VTD ≈ 120 mL) : volume présent dans le ventricule en fin de remplissage diastolique. Volume Télésystolique (VTS ≈ 50 mL) : volume résiduel après éjection. Volume d'Éjection Systolique (VES) : volume propulsé à chaque battement cardiaque : VES = VTD - VTS ≈ 70 mL. Fraction d'Éjection (FE) : FE = (VES / VTD) * 100% (normale : FE >= 55%).\nDébit Cardiaque (Q ou DC) : volume de sang éjecté par chaque ventricule par minute : Q = FC * VES, où FC est la fréquence cardiaque (au repos : FC ≈ 70 bpm, Q ≈ 70 * 70 = 4.9 à 5 L/min). En plein effort, le débit cardiaque peut atteindre 20 à 25 L/min.\n\n--- Page 3: Pression Artérielle & Régulation ---\nLa Pression Artérielle (PA) est la force exercée par le sang sur la paroi des artères. Pression Artérielle Systolique (PAS, normale < 130 mmHg) et Pression Artérielle Diastolique (PAD, normale < 85 mmHg). Pression Artérielle Moyenne (PAM) assurant la perfusion des organes : PAM = PAD + (1/3) * (PAS - PAD) = (PAS + 2 * PAD) / 3 (normale ≈ 90 à 100 mmHg). Loi hémodynamique fondamentale : PAM = Q * RPT, où RPT désigne les Résistances Périphériques Totales déterminées principalement par le tonus vasomoteur des artérioles.\nRégulation à court terme par le système nerveux autonome via les barorécepteurs du sinus carotidien et de la crosse aortique. Régulation à moyen et long terme par le Système Rénine-Angiotensine-Aldostérone (SRAA) et l'hormone antidiurétique (ADH/vasopressine).\n\n--- Page 4: Électrophysiologie & Système Cardionecteur ---\nL'automatisme cardiaque est généré par le tissu nodal (cellules pacemakers auto-excitables) : 1° Le Nœud Sinusal (de Keith et Flack) situé dans l'oreillette droite, déclenchant l'impulsion à 70-80 bpm; 2° Le Nœud Atrio-Ventriculaire (d'Aschoff-Tawara) qui ralentit la conduction pour permettre le remplissage ventriculaire; 3° Le Faisceau de His et le réseau de fibres de Purkinje qui propagent l'influx électrique rapidement aux ventricules.\nTracé de l'Électrocardiogramme (ECG standard 12 dérivations) : Onde P (dépolarisation auriculaire); Intervalle PR (conduction atrio-ventriculaire, 0.12 à 0.20 s); Complexe QRS (dépolarisation ventriculaire rapide, < 0.10 s); Segment ST et Onde T (repomparisation ventriculaire).",
+    "summary": [
+      "1. Anatomie cardiaque : 4 cavités (2 oreillettes, 2 ventricules) et 4 valves unidirectionnelles (tricuspide, mitrale, aortique, pulmonaire).",
+      "2. Volume d'éjection systolique : VES = VTD - VTS ≈ 70 mL au repos.",
+      "3. Fraction d'éjection ventriculaire : FE = (VES / VTD) * 100% (normale >= 55%).",
+      "4. Débit cardiaque fondamental : Q = FC * VES (environ 5 L/min au repos).",
+      "5. Pression artérielle moyenne : PAM = PAD + 1/3 * (PAS - PAD) (normale entre 70 et 105 mmHg).",
+      "6. Relation hémodynamique : PAM = Débit Cardiaque (Q) * Résistances Périphériques Totales (RPT).",
+      "7. Tissu conducteur nodal : Nœud sinusal (pacemaker) -> Nœud AV -> Faisceau de His -> Réseau de Purkinje.",
+      "8. Ondes ECG : Onde P (dépolarisation auriculaire), QRS (dépolarisation ventriculaire), Onde T (repolarisation ventriculaire).",
+      "9. Petite circulation (pulmonaire, hématose) vs Grande circulation (systémique, oxygénation tissulaire).",
+      "10. Régulation tensionnelle : baroréflexe carotidien (court terme) et système Rénine-Angiotensine-Aldostérone (long terme)."
+    ],
+    "formulas": [
+      "VES = VTD - VTS (Volume éjection systolique)",
+      "FE = (VES / VTD) * 100% (Fraction d'éjection >= 55%)",
+      "Q = FC * VES (Débit cardiaque)",
+      "PAM = PAD + (1/3) * (PAS - PAD) (Pression artérielle moyenne)",
+      "PAM = Q * RPT (Loi fondamentale hémodynamique)",
+      "IMC = Masse_kg / (Taille_m)^2 (Indice de Masse Corporelle)"
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "Si la fréquence cardiaque d'un patient est FC = 75 bpm et son volume d'éjection systolique VES = 70 mL, quel est son débit cardiaque Q ?",
+        "options": ["5.25 L/min", "7.5 L/min", "4.2 L/min", "6.0 L/min"],
+        "correctIndex": 0,
+        "explanation": "Q = FC * VES = 75 * 0.070 L = 5.25 L/min."
+      },
+      {
+        "id": 2,
+        "question": "Pour une pression artérielle mesurée à 120/80 mmHg (PAS = 120, PAD = 80), quelle est la Pression Artérielle Moyenne (PAM) ?",
+        "options": ["93.3 mmHg", "100 mmHg", "85 mmHg", "105 mmHg"],
+        "correctIndex": 0,
+        "explanation": "PAM = PAD + (1/3)*(PAS - PAD) = 80 + (1/3)*(40) = 80 + 13.33 = 93.33 mmHg."
+      },
+      {
+        "id": 3,
+        "question": "Sur un électrocardiogramme (ECG), à quoi correspond le complexe QRS ?",
+        "options": ["À la dépolarisation des ventricules", "À la dépolarisation des oreillettes", "À la repolarisation des ventricules", "Au temps de conduction nodal"],
+        "correctIndex": 0,
+        "explanation": "Le complexe QRS traduit l'activation et la dépolarisation électrique rapide du myocarde ventriculaire."
+      }
+    ]
+  },
+  {
+    "id": "official_eco_micro",
+    "title": "Microéconomie & Théorie des Marchés",
+    "faculty": "Économie",
+    "totalPages": 20,
+    "fileSize": 490000,
+    "createdAt": 1740000000000,
+    "uploaderId": "boss_ismael",
+    "uploaderName": "Boss ISMAEL (Créateur) ⚡",
+    "isOfficial": true,
+    "downloadUrl": "https://ia800300.us.archive.org/10/items/principesdeconom00gide/principesdeconom00gide.pdf",
+    "description": "Optimisation du consommateur sous contrainte budgétaire, élasticité-prix de la demande, maximisation du profit en concurrence pure et parfaite (Cm = Rm = P).",
+    "sampleText": "Équilibre du consommateur: Taux Marginal de Substitution TMS = Um_x / Um_y = P_x / P_y. La contrainte budgétaire s'écrit: R = P_x * X + P_y * Y. En concurrence pure et parfaite, l'entreprise maximise son profit lorsque le coût marginal est égal au prix du marché (Cm = P).",
+    "fullContent": "--- Page 1: Théorie du Consommateur & Utilité ---\nLa microéconomie analyse les comportements individuels des agents économiques (ménages et entreprises) et leurs interactions sur les marchés. L'utilité U(X, Y) mesure la satisfaction tirée de la consommation des biens X et Y. L'utilité marginale Um_x = dU/dX est la satisfaction supplémentaire procurée par une unité additionnelle du bien X (décroissante selon la loi de Gossen). Taux Marginal de Substitution (TMS) entre X et Y : quantité de bien Y à laquelle le consommateur est prêt à renoncer pour obtenir une unité de X tout en conservant le même niveau d'utilité : TMS = - dY/dX = Um_x / Um_y.\n\n--- Page 2: Contrainte Budgétaire et Équilibre Optimal ---\nLe consommateur dispose d'un revenu nominal R et fait face aux prix unitaires P_x et P_y. Droite de budget : R = P_x * X + P_y * Y, d'où Y = (R / P_y) - (P_x / P_y) * X. La pente de la droite de budget est le rapport des prix relatifs (- P_x / P_y). Condition d'optimalité à l'équilibre du consommateur (tangence entre courbe d'indifférence et droite de budget) : TMS = Um_x / Um_y = P_x / P_y. Théorème d'égalisation des utilités marginales pondérées par les prix : Um_x / P_x = Um_y / P_y.\n\n--- Page 3: Élasticités de la Demande ---\n1. Élasticité-prix directe de la demande : e_(Q/P) = (dQ / Q) / (dP / P) = (dQ / dP) * (P / Q). Si |e| > 1 : demande élastique (forte réaction); si |e| < 1 : demande inélastique / rigide; si |e| = 1 : élasticité unitaire.\n2. Élasticité-revenu de la demande : e_(Q/R) = (dQ / dR) * (R / Q). Si e_R < 0 : bien inférieur; si 0 <= e_R <= 1 : bien normal de première nécessité; si e_R > 1 : bien supérieur / de luxe (loi d'Engel).\n3. Élasticité-prix croisée : e_(Q_x / P_y) = (dQ_x / dP_y) * (P_y / Q_x). Si e > 0 : biens substituables (ex. café et thé); si e < 0 : biens complémentaires (ex. voiture et carburant); si e = 0 : biens indépendants.\n\n--- Page 4: Théorie du Producteur et Structures de Marché ---\nFonction de production Q = f(K, L) associant capital K et travail L. Coût Total CT(Q) = Coût Fixe (CF) + Coût Variable CV(Q). Coût Moyen CM(Q) = CT(Q) / Q. Coût Marginal Cm(Q) = dCT / dQ (coût de la dernière unité produite). Recette Totale RT(Q) = P * Q. Recette Marginale Rm(Q) = dRT / dQ. Maximisation du profit : condition du premier ordre dPi / dQ = 0 => Rm(Q) = Cm(Q).\nEn Concurrence Pure et Parfaite (CPP, 5 conditions : atomicité, homogénéité des produits, libre entrée/sortie, transparence, mobilité des facteurs) : le prix P est imposé par le marché (price taker), donc Rm = P. Règle d'or de maximisation du profit en CPP : P = Cm(Q). En situation de Monopole : le producteur est faiseur de prix (price maker), la recette marginale est inférieure au prix (Rm < P), ce qui engendre une perte sèche pour la société.",
+    "summary": [
+      "1. Utilité marginale Um décroissante (loi de Gossen) : Um_x = dU/dX.",
+      "2. Taux Marginal de Substitution : TMS = Um_x / Um_y = - dY/dX.",
+      "3. Droite de budget : R = P_x * X + P_y * Y.",
+      "4. Équilibre du consommateur : TMS = Um_x / Um_y = P_x / P_y.",
+      "5. Élasticité-prix directe : e = (dQ/Q) / (dP/P) = (dQ/dP) * (P/Q).",
+      "6. Élasticité croisée : positive pour biens substituables, négative pour biens complémentaires.",
+      "7. Coût marginal : Cm = dCT/dQ ; Coût moyen : CM = CT/Q.",
+      "8. Règle de maximisation du profit : Recette Marginale = Coût Marginal (Rm = Cm).",
+      "9. En concurrence pure et parfaite (CPP) : le prix est fixé par le marché, donc P = Cm.",
+      "10. En monopole : Rm < P, fixation d'un prix plus élevé entraînant une perte sèche collective."
+    ],
+    "formulas": [
+      "TMS = Um_x / Um_y = P_x / P_y (Équilibre du consommateur)",
+      "R = P_x * X + P_y * Y (Contrainte budgétaire)",
+      "e = (dQ / dP) * (P / Q) (Élasticité-prix de la demande)",
+      "e_R = (dQ / dR) * (R / Q) (Élasticité-revenu)",
+      "CT(Q) = CF + CV(Q) (Coût total)",
+      "Cm(Q) = dCT / dQ (Coût marginal)",
+      "CM(Q) = CT(Q) / Q (Coût moyen)",
+      "Rm = Cm (Condition universelle de profit maximal)",
+      "P = Cm (Maximisation du profit en CPP)"
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "À l'équilibre optimal du consommateur sous contrainte budgétaire, quelle égalité est vérifiée ?",
+        "options": ["TMS = P_x / P_y = Um_x / Um_y", "TMS = P_y / P_x", "Um_x * P_x = Um_y * P_y", "R = TMS * Q"],
+        "correctIndex": 0,
+        "explanation": "L'équilibre correspond au point de tangence où le TMS (rapport des utilités marginales) est égal au rapport des prix relatifs (P_x / P_y)."
+      },
+      {
+        "id": 2,
+        "question": "Quelle est la règle de maximisation du profit d'une entreprise en situation de Concurrence Pure et Parfaite (CPP) ?",
+        "options": ["Prix de marché = Coût marginal (P = Cm)", "Prix = Coût fixe", "Recette totale = Coût moyen", "Prix = Recette totale / 2"],
+        "correctIndex": 0,
+        "explanation": "En CPP, l'entreprise étant preneuse de prix (price-taker), Rm = P, donc la condition Rm = Cm devient P = Cm."
+      },
+      {
+        "id": 3,
+        "question": "Si l'élasticité-prix croisée entre deux biens X et Y est positive (e > 0), comment qualifie-t-on ces deux biens ?",
+        "options": ["Biens substituables", "Biens complémentaires", "Biens inférieurs", "Biens de Giffen"],
+        "correctIndex": 0,
+        "explanation": "Une hausse du prix de Y entraîne une augmentation de la demande de X : les deux biens peuvent se remplacer mutuellement (ex: thé et café)."
+      }
+    ]
+  }
+]
